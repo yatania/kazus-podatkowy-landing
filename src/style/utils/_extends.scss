@@ -1,0 +1,30 @@
+@import "./variables";
+@import "./mixins";
+
+%text-list {
+  font-size: 14px;
+  font-weight: 300;
+  color: $color-dark;
+}
+
+%text {
+  font-size: 14px;
+  font-weight: 300;
+  color: $color-light-green;
+}
+
+%header-icons {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include hover(background-color, $color-primary);
+
+  @include onMobile {
+    width: 30px;
+    height: 30px;
+  }
+}
